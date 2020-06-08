@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RK-2 WEB Mazaev</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fa\css\font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="main">
+        <div class="main__header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" alt="" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Ws.html">World Skills</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="main__intro">
+            <h1>
+                Точка кипения
+                <br>
+                Московский Политех
+            </h1>
+            <p>Точка кипения - проект Московского Политеха по воспитанию гномов-строителей.</p>
+            <button class="add" data-toggle="modal" data-target="#modal">Записаться</button>
+            <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Записаться на Точку Кипения</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="needs-validation" novalidate>
+                                <div class="form-column">
+                                  <div class="col-md-4 mb-3">
+                                    <label for="validationCustom01">Имя</label>
+                                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                                    <div class="valid-feedback">
+                                      Отлично!
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                    <label for="validationCustom02">Фамилия</label>
+                                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                                    <div class="valid-feedback">
+                                      Отлично!
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label for="validationCustomUsername">Username</label>
+                                    <div class="input-group">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                      </div>
+                                      <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                                      <div class="invalid-feedback">
+                                        Выберите username.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-column">
+                                  <div class="col-md-6 mb-3">
+                                    <label for="validationCustom03">Город</label>
+                                    <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                                    <div class="invalid-feedback">
+                                      Отлично!
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                      Подтвердите согласие на обработку данных.
+                                    </label>
+                                    <div class="invalid-feedback">
+                                      Вы должны подтвердить.
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="btn btn-primary" type="submit">Подтвердить</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                              </form>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__content container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="main__content_mission">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1><i class="fa fa-align-justify" aria-hidden="true"></i>Миссия</h1>
+                            </div>
+                            <div class="card-body">
+                                <img src="./img/back.png" alt="">
+                                <p><span>Миссия –</span> 100% студентов, преподавателей, администрации вовлечены в повестку стратегического развития университета</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="main__content_targets">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1><i class="fa fa-wpexplorer" aria-hidden="true"></i>Цели</h1>
+                            </div>
+                            <div class="card-body">
+                                <img src="./img/back.png" alt="">
+                                <p><span>Цели –</span> тестирование способов достижения стратегических задач университета, в том числе поиск новых: быстро, удобно, комплексно.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__content_sbk">
+                <div class="main__content_tasks">
+                    <h1>Задачи</h1>
+                    <p>Задачи – связать 9 стратегических целей и 20 стратегических проектов с бизнес- интересами внешних и внутренних сообществ университета, внешняя (относительно разработчиков) обратная связь по проектам</p>
+                </div>
+                <div class="main__content_strategy">
+                    <h1>Стратегическая цель</h1>
+                    <p>Стратегическая цель – формирование культуры ответственности за выбор личной образовательной и карьерной траектории</p>
+                </div>
+                <div class="main__content_role">
+                    <h1>Роль в ВУЗе</h1>
+                    <p>Роль в вузе (функционал в университете будущего) – площадка проработки стратегических проектов университета (коммуникация студентов, преподавателей, исследователей, администрации, бизнес-сообществ)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main__content_capabilities container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 for-personal">
+                                <h1>Возможности для сотрудников</h1>
+                                <ul>
+                                    <li><span>Экспертность –</span> подтверждение или приобретение статуса эксперта, вовлечение сотрудников в новые экспертные области, направления</li>
+                                    <li><span>Привлечение партнеров –</span> статус университета с ТК подтверждает включение в экосистему АСИ и НТИ, новые партнеры, усиление связей с партнерами</li>
+                                    <li><span>Новые проекты –</span> идеи и запросы внешних партнеров, а также инициативные проекты от студентов и сотрудников</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 for-uni">
+                                <h1>Возможности для университета</h1>
+                                <ul>
+                                    <li><span>Инфраструктура Точек Кипения –</span> онлайн инструменты работы с сообществами, студентами, преподавателями, быстрые коммуникации и прочее</li>
+                                    <li><span>Транслирование опыта –</span> сотрудничество с другими университетами по передаче опыта</li>
+                                    <li>Возможность участия в конкурсах по линии Цифровой экономики</li>
+                                    <li>Сетевые мероприятия сети Точек Кипения (PR, привлечение экспертов, проектов)</li>
+                                    <li>Представление университета в повестке РФ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__footer">
+            <img src="./img/logo.png" alt="" width="150">
+            <p>Мазае Роман Романович, 191-321</p>
+            <ul class="main__footer_navigation">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="./Ws.html">World Skills</a></li>
+                <li><a href="./uni.html">Университет 2035</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World Skills</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fa\css\font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="main">
+        <div class="main__header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" alt="" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./Ws.html">World Skills</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Найди что нибудь" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <class class="main__introWS">
+            <h1>Движение World Skills</h1>
+            <p>Направление развития профессиональных навыков у людей</p>
+            <button class="add" data-toggle="modal" data-target="#modal">Подать заявку</button>
+            <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Подать заявку</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="needs-validation" novalidate>
+                            <div class="form-column">
+                              <div class="col-md-4 mb-3">
+                                <label for="validationCustom01">Имя</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                                <div class="valid-feedback">
+                                  Отлично!
+                                </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                <label for="validationCustom02">Фамилия</label>
+                                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                                <div class="valid-feedback">
+                                  Отлично!
+                                </div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                <label for="validationCustomUsername">Username</label>
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                  </div>
+                                  <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                                  <div class="invalid-feedback">
+                                    Выберите username.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-column">
+                              <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Город</label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                                <div class="invalid-feedback">
+                                  Отлично!
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                  Подтвердите согласие на обработку данных.
+                                </label>
+                                <div class="invalid-feedback">
+                                  Вы должны подтвердить.
+                                </div>
+                              </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Подтвердить</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </class>
+        </div>
+        <div class="main__contentWS container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="main__contentWS_now">
+                        <h1><i class="fa fa-line-chart" aria-hidden="true"></i>Нынешняя ситуация</h1>
+                        <p>Активное участие в межвузовских чемпионатах по многим компетенциям, разработка новых компетенций, подготовка экспертов WS внутри университета, подготовка участников для мирового чемпионата</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="main__contentWS_future">
+                        <h1><i class="fa fa-globe" aria-hidden="true"></i>Как планируется в будущем</h1>
+                        <p>Дальнейшее развитие направление, систематизация подготовки, разработка новых компетенций</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="main__contentWS_effects">
+                        <h1><i class="fa fa-spin fa-cog" aria-hidden="true"></i>Эффекты</h1>
+                        <p> Развитие сотрудников, студентов, возможность участия в новых конкурсах, выход на международную арену
+                            актуализация образовательных программ под запрос экспертного сообщества
+                            разработка новых образовательных программ (в том числе ДПО)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__contentWS_info">
+                <button>Подключиться</button>
+                <br>
+                <small>*Подключиться к сообществу по направлению и получить информацию</small>
+                <p></p>
+                <h1>Так же вы можете узнать о нас в наших соцсетях:
+                    <br>
+                    <a href="https://vk.com/id208251930"><i class="fa fa-vk" aria-hidden="true"></i></a> 
+                    <a href="https://www.facebook.com/worldskills.ru/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="http://worldskillsrussia.org/"><i class="fa fa-windows" aria-hidden="true"></i></a>
+                </h1>
+            </div>
+        </div>
+        <div class="main__footer">
+            <img src="./img/logo.png" alt="" width="150">
+            <p>Мазае Роман Романович, 191-321</p>
+            <ul class="main__footer_navigation">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="./Ws.html">World Skills</a></li>
+                <li><a href="./uni.html">Университет 2035</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
